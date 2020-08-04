@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kenal Lingkungan</string>
+    <string name="nama_herbal">Nama</string>
+    <string name="detail_tanaman">Detail Tanaman</string>
+    <string name="toga">TOGA</string>
+    <string name="tanaman_obat_keluarga">Tanaman Obat Keluarga</string>
+    <string name="alamat">Alamat</string>
+</resources>
