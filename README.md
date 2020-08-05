@@ -1,5 +1,5 @@
 # Submission Dicoding Belajar Membuat Aplikasi Android untuk Pemula
-#Feature
+# Feature 
 List View with Data <br>
 Detail item for each data <br>
 Profile Page <br>
