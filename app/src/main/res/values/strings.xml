@@ -5,4 +5,8 @@
     <string name="toga">TOGA</string>
     <string name="tanaman_obat_keluarga">Tanaman Obat Keluarga</string>
     <string name="alamat">Alamat</string>
+    <string name="nama_tanaman">Nama Tanaman</string>
+    <string name="nama_ilmiah">Nama Ilmiah</string>
+    <string name="text_detail">text detail</string>
+    <string name="tonton_video">Tonton Video</string>
 </resources>

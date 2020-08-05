@@ -21,6 +21,23 @@ public class HerbalData {
             "Jeruk Nipis",
             "Lidah Buaya"
     };
+    private static String[] herbalIlmiah = {
+            "Tamarindus indica",
+            "Hibiscus sabdariffa",
+            "Amaranthus",
+            "Cyclea barbata",
+            "Gynura divaricata",
+            "Moringa oleifera",
+            "Ocimum basilicum",
+            "Orthosiphon aristatus",
+            "Aglaia odorata",
+            "Abrus precatorius",
+            "Apium graveolens",
+            "Zingiber officinale",
+            "Psidium guajava",
+            "Citrus × aurantiifolia",
+            "Aloe vera"
+    };
     private static String[] herbalDetail = {
             "Asam jawa, asam atau asem adalah sejenis buah yang masam rasanya; biasa digunakan sebagai campuran bumbu dalam banyak masakan Indonesia sebagai perasa atau penambah rasa asam dalam makanan, misalnya pada sayur asam atau kadang-kadang pada kuah pempek.",
             "Rosela, asam kumbang, asam susur, asam paya atau rosella adalah spesies bunga yang berasal dari benua Afrika. Mulanya bunga yang juga cantik untuk dijadikan penghias halaman rumah itu diseduh sebagai minuman hangat di musim dingin dan minuman dingin di musim panas.",
@@ -60,6 +77,7 @@ public class HerbalData {
         for (int position = 0; position < herbalName.length; position++){
             Herbal herbal = new Herbal();
             herbal.setName(herbalName[position]);
+            herbal.setIlmiah(herbalIlmiah[position]);
             herbal.setDetail(herbalDetail[position]);
             herbal.setPhoto(herbalImages[position]);
             list.add(herbal);

@@ -1,5 +1,6 @@
 package com.example.submissiondic
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,12 +27,24 @@ class ListHerbalAdapter(private val listHerbal: ArrayList<Herbal>): RecyclerView
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val herbal = listHerbal[position]
+        val (name, ilmiah, detail, photo) = listHerbal[position]
         Glide.with(holder.itemView.context)
-            .load(herbal.photo)
+            .load(photo)
             .apply(RequestOptions().override(60,60))
             .into(holder.imgPhoto)
-        holder.tvName.text = herbal.name
-        holder.tvDetail.text = herbal.detail
+
+        val mContext = holder.itemView.context
+
+        holder.tvName.setText(name + " (" + ilmiah + ")")
+        holder.tvDetail.text = detail
+
+        holder.itemView.setOnClickListener {
+        val toDetail = Intent(mContext, DetailHerbal::class.java)
+            toDetail.putExtra(DetailHerbal.EXTRA_NAMAHERBAL, name)
+            toDetail.putExtra(DetailHerbal.EXTRA_NAMAILMIAH, ilmiah)
+            toDetail.putExtra(DetailHerbal.EXTRA_DETAIL, detail)
+            toDetail.putExtra(DetailHerbal.EXTRA_PHOTO, photo)
+            mContext.startActivity(toDetail)
+        }
     }
 }

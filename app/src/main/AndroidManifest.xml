@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/icon_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".DetailHerbal"></activity>
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".HalamanBeranda" />
         <activity android:name=".SplashActivity">
             <intent-filter>

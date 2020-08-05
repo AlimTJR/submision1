@@ -34,7 +34,6 @@ class ProfileActivity : AppCompatActivity(), View.OnClickListener {
         tvdatanama.text= nama
         tvdatamail.text= email
         tvdataalamat.text=alamat
-        tvdataphone.text=phone
         tvinstagram.text=instagram
     }
 
