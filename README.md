@@ -1,7 +1,7 @@
 # Submission Dicoding Belajar Membuat Aplikasi Android untuk Pemula
 #Feature
-List View with Data
-Detail item for each data
-Profile Page
+List View with Data \n
+Detail item for each data \n
+Profile Page \n
 
 Screen Shoot
